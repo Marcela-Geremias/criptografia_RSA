@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia RSA</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #c9c1e5;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+        textarea, input, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        button {
+            background-color: #c8a2c8;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #800080;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Criptografia RSA</h1>
+        <button id="generate-keys">Gerar Chaves</button>
+        <p><strong>Chave Pública:</strong></p>
+        <textarea id="public-key" readonly></textarea>
+        
+        <h2>Cifrar Mensagem</h2>
+        <textarea id="message" placeholder="Digite sua mensagem"></textarea>
+        <button id="encrypt">Cifrar</button>
+        <p><strong>Mensagem Cifrada:</strong></p>
+        <textarea id="encrypted-message" readonly></textarea>
+
+        <h2>Decifrar Mensagem</h2>
+        <textarea id="encrypted-input" placeholder="Cole a mensagem cifrada aqui"></textarea>
+        <button id="decrypt">Decifrar</button>
+        <p><strong>Mensagem Decifrada:</strong></p>
+        <textarea id="decrypted-message" readonly></textarea>
+    </div>
+</body>
+</html>
